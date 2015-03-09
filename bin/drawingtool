@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+/*
+ * This file is part of DrawingTool.
+ */
+
+if (!ini_get('date.timezone')) {
+    ini_set('date.timezone', 'UTC');
+}
+
+(@include_once __DIR__ . '/../vendor/autoload.php') || @include_once __DIR__ . '/../../../autoload.php';
+
+use DrawingTool\Application;
+
+$app = new Application();
